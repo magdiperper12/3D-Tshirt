@@ -7,7 +7,7 @@ import { reader } from '../config/helpers';
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants';
 import { fadeAnimation, slideAnimation } from '../config/motion';
 import { ColorPicker, CustomButton, FilePicker, Tab } from '../components';
-import Toggle from '../canvas/toggle';
+import Toggle from '../canvas/Toggle';
 
 const Customizer = () => {
 	const snap = useSnapshot(state);
