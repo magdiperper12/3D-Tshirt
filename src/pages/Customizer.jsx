@@ -7,6 +7,7 @@ import { reader } from '../config/helpers';
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants';
 import { fadeAnimation, slideAnimation } from '../config/motion';
 import { ColorPicker, CustomButton, FilePicker, Tab } from '../components';
+import Toggle from '../canvas/toggle';
 
 const Customizer = () => {
 	const snap = useSnapshot(state);
@@ -97,6 +98,12 @@ const Customizer = () => {
 								{generateTabContent()}
 							</div>
 						</div>
+					</motion.div>
+					<motion.div
+						key='custom'
+						className='absolute top-1/3 right-0 z-10'
+						{...slideAnimation('left')}>
+						<Toggle />
 					</motion.div>
 
 					<motion.div
